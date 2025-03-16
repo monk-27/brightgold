@@ -1,25 +1,28 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "Home", link: "/" },
+  { name: "Products", link: "/products" },
+  { name: "About", link: "/about-us" },
+  { name: "Contact", link: "/contact-us" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
+    title: "Who Are We?",
+    description:
+      "Bright Gold Refinery is the scrapper of the finest gold in the cosmos, certified by NABL (National Accreditation Board for Testing and Calibration Laboratory) and Bureau of Indian Standards (BIS) we are committed to bringing out and serving with the superlative. Gold is not just a precious metal, it’s an emotion for the populace. That is why we refine and manufacture your most desired and sought-after Gold Silver jewellery.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
   },
+
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "What We Do?",
+    description:
+      "Have you ever deliberated about how you get to wear those stunning & dazzling gold jewellery pieces? Well, gratitude to us, because we pass it straight to you. Yes, we are one of the best gold refiners using the Aqua Regia methodology! A process where the precious metal is extracted from water while shielding our natural resources.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -28,8 +31,9 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Our Mission",
+    description:
+      "IAt Bright Gold, we are the most precise and reliable Gold Refiner by continuously achieving operational excellence and delivering value - we want to be your Gold Refiner of preference.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,8 +42,9 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
+    title: "OUR VISION",
+    description:
+      "With Bright Gold, we assured all our services would be certainly honest, reliable and quick for your precious metals. Our devotion is our greatest asset. Our vision is to serve our potential buyers with honesty, simplicity and loyalty.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -49,18 +54,20 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Why Us?",
+    description:
+      "“To shine your brightest light is to be who you truly are.”, Bright Gold, accurately consider in the shine of Gold, we host Innovative Extraction Methodologies, with varied resources that take care of and ensure the finest quality, our Exceptionally trained employees brings out the best of the industry. Our intense knowledge and excellent industry experience, when put together, makes us a superior proposition and keep us at the top of the industry competitors.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
+    img: "/goldbrick.gif",
     spareImg: "/grid.svg",
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
+    title: "About the Company",
+    description:
+      "Bright Metal Refiners was established with an apparition to approach out as the leading refinery for the majority of precious metals in the globe.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -69,135 +76,102 @@ export const gridItems = [
   },
 ];
 
-export const projects = [
+export const bars = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "1 Kg GOLD BAR ",
+    des: "999 Gold is the finest quality of fine (Pure) Gold, as the karate of Gold reduces it means the existence of other metals percentage, & we bring to you the purest form.",
+    img: "/1000gmbar.png",
+    iconLists: [],
+    link: "",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "100g GOLD BAR",
+    des: "The delicacy of 995 indicates that 995 parts of gold are mixed with 5 parts of another metal, which is perfect for your choice of jewelry.",
+    img: "/100gmbar.png",
+    iconLists: [],
+    link: "",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Minted Coins",
+    des: "Minted Coins that we produce are designed to attain and indicate the shapes and designs with perfection to achieve the high quality.",
+    img: "/10gmcoin.png",
+    iconLists: [],
+    link: "",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Minted Coins",
+    des: "Minted Coins that we produce are designed to attain and indicate the shapes and designs with perfection to achieve the high quality.",
+    img: "/10gmcoin.png",
+    iconLists: [],
+    link: "",
   },
 ];
 
 export const testimonials = [
   {
+    id: 1,
+
+    mainquote:
+      "We want to be the best, most accurate and reliable gold refiner.",
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "❝These are testing times of our resilience. But by sustainably adapting and keeping our focus unaltered, progress would be a breeze to attain. Because together, we definitely can! ❞",
+    name: "Mr. Ashish Gupta ",
+    img: "/ashishgupta.png",
+    title: "( CEO )",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "",
+    img: "/union-bank.png",
+    nameImg: "",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "",
+    img: "/axis-bank.png",
+    nameImg: "",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "",
+    img: "/icici.webp",
+    nameImg: "",
   },
 ];
-
-export const workExperience = [
+export const association = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    name: "",
+    img: "/NABTCL.png",
+    nameImg: "",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    name: "",
+    img: "/BIS.png",
+    nameImg: "",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    name: "",
+    img: "/DGFT.png",
+    nameImg: "",
   },
+];
+export const technique = [
   {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    id: 1,
+    title: "AQUA REGIA",
+    desc: "In Aqua Regia, 99.9% pure metallic gold is obtained. This process can be employed on a large scale. A primary step of the process is to dissolve the precious metals and some impurities. Aqua Regia combines nitric acid and hydrochloric acid so that some silver remains in solution and some forms a silver chloride precipitate. Silver content must also be taken into consideration. There is no doubt that silver chloride formation negatively affects gold dissolution. As soon as the dissolution is complete, the solution and precipitate are separated by filtration. A reducing agent such as ferrous sulphate, sulfur dioxide, or sodium bisulphate is used to reduce the gold in the solution. High-purity gold powder is then obtained that can be melted. The platinum group metals remain in solution when gold precipitates, so they must be recovered in another way.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/refining.png",
   },
 ];
 

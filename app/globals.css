@@ -77,7 +77,47 @@
     @apply active:outline-none;
   }
 }
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 
+.animate-shine {
+  animation: shine 1.5s infinite;
+}
+.bg-themeBlue {
+  background: #cde8f1;
+}
+
+.bg-themeLight001 {
+  background: rgb(0 0 0 / 20%);
+}
+
+.bg-theme {
+  background: #092637;
+}
+.bg-themeLight {
+  background: rgba(44, 123, 172, 0.2);
+}
+.bg-themeLight01 {
+  background: rgba(44, 123, 172, 0.1);
+}
+.bg-themeDarkBlue {
+  background: #0e3a55;
+}
+.bg-themeYellow {
+  background: #fdfcf0;
+}
+.text-themeBlue {
+  color: #7f9cad;
+}
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;

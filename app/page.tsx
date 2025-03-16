@@ -7,20 +7,26 @@ import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
-import RecentProjects from "@/components/RecentProjects";
+
+import RecentProjects from "@/components/frequentCoins";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import WhatWeDoCard from "@/components/whatwedo";
+import Technique from "@/components/Experience";
+import FrequentCoins from "@/components/frequentCoins";
+import FundamentalAspects from "@/components/aspects";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-[#13162D] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+
       <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
         <Hero />
-        <Grid />
-        <RecentProjects />
+
+        <FrequentCoins />
+        <FundamentalAspects />
         <Clients />
-        <Experience />
+        <Technique />
         <Approach />
         <Footer />
       </div>

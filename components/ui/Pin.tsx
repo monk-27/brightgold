@@ -165,3 +165,6 @@ export const PinPerspective = ({
     </motion.div>
   );
 };
+
+
+
