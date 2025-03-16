@@ -1,12 +1,11 @@
-import AboutComponent from '@/components/AboutComp'
-import React from 'react'
+import dynamic from "next/dynamic";
+
+const AboutComponent = dynamic(() => import("@/components/AboutComp"), {
+    ssr: false, // Disable server-side rendering
+});
 
 const AboutPage = () => {
-    return (
-        <div>
-            <AboutComponent />
-        </div>
-    )
-}
+    return <AboutComponent />;
+};
 
-export default AboutPage
+export default AboutPage;

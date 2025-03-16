@@ -10,8 +10,8 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adrian's Portfolio",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: "Bright Gold",
+  description: "",
 };
 
 export default function RootLayout({
