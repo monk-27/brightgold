@@ -186,7 +186,7 @@ export const Icon = ({ className, ...rest }: any) => {
       className={className}
       {...rest}
     >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
+      {/* <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" /> */}
     </svg>
   );
 };
