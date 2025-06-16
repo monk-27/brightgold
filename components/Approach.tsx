@@ -265,3 +265,4 @@ export const Icon = ({ className, ...rest }: any) => {
     </svg>
   );
 };
+/* eslint-disable react/no-unescaped-entities */
