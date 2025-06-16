@@ -111,9 +111,9 @@ export const bars = [
   },
 ];
 
-export const testimonials = [
+export const testimonials1 = [
   {
-    id: 1,
+    id: 2,
 
     mainquote:
       "We want to be the best, most accurate and reliable gold refiner.",
@@ -124,7 +124,18 @@ export const testimonials = [
     title: "( CEO )",
   },
 ];
-
+export const testimonials = [
+  {
+    id: 1,
+    mainquote:
+      "We want to be the best, most accurate and reliable gold refiner.",
+    quote:
+      "❝These are testing times of our resilience. But by sustainably adapting and keeping our focus unaltered, progress would be a breeze to attain. Because together, we definitely can! ❞",
+    name: "Mr. Ashish Gupta ",
+    img: "/ashishgupta.png",
+    title: "( CEO )",
+  },
+];
 export const companies = [
   {
     id: 1,
