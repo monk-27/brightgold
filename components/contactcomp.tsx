@@ -153,7 +153,7 @@ const ContactComponent = () => {
                     <span className="text-white py-6 text-center sm:text-lg sm:poppins-semibold">
 
                     </span>
-                    <p className="text-white py-6  text-xl text-center sm:text-3xl sm:poppins-semibold">
+                    <p className="text-white py-12  text-xl text-center sm:text-3xl sm:poppins-semibold">
                         Contact us
                     </p>
 
@@ -179,12 +179,12 @@ const ContactComponent = () => {
                                     />
                                     <div className="bold text-base mt-2 text-white">CALL US</div>
                                     <div className="px-4 py-2 text-center text-white">
-                                        +91 9289480035
+                                        01143093345
                                     </div>
                                 </div>
                             </Link>
                             {/* Static Card 2: MAIL US */}
-                            <Link href="mailto:support@brightdigigold.com">
+                            <Link href="mailto:connect@brightgold.com">
                                 <div className="py-6 sm:min-h-[110px] overflow-hidden flex flex-col items-center">
                                     <Image
                                         className="mb-1"
@@ -196,12 +196,12 @@ const ContactComponent = () => {
                                     />
                                     <div className="bold text-base mt-2 text-white">MAIL US</div>
                                     <div className="px-4 py-2 text-center text-white">
-                                        support@brightdigigold.com
+                                        connect@brightgold.com
                                     </div>
                                 </div>
                             </Link>
                             {/* Static Card 3: REACH US */}
-                            <Link href="https://www.google.com/maps/dir//brightdigigold/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x390cfd318e5aaaab:0xf356a848ef1c91ee?sa=X&ved=2ahUKEwi4vYjQuvL_AhWNDt4KHRZlDKcQ9Rd6BAhcEAA&ved=2ahUKEwi4vYjQuvL_AhWNDt4KHRZlDKcQ9Rd6BAhkEAU">
+                            <Link href="">
                                 <div className="py-6 sm:min-h-[110px] overflow-hidden flex flex-col items-center">
                                     <Image
                                         className="mb-1"
@@ -215,17 +215,17 @@ const ContactComponent = () => {
                                     <div
                                         className="px-4 py-2 text-center text-white"
                                         dangerouslySetInnerHTML={{
-                                            __html: "BRIGHT DIGI GOLD PRIVATE LIMITED<br />501, 5th Floor, World Trade Center, Babar Road, New Delhi - 110001",
+                                            __html: "Bright Metal Refiners<br />416, 4th Floor, World Trade Center, Babar Road, New Delhi - 110001",
                                         }}
                                     />
                                 </div>
                             </Link>
                         </div>
                         <section className="w-full md:w-3/4 bg-gradient-to-br from-[#15425E] to-[#15425E]] px-4 py-4 sm:py-10 rounded-lg md:pl-40 lg:pl-40 xl:pl-56">
-                            <p className="pb-3 text-lg sm:text-xl poppins-semibold">
+                            {/* <p className="pb-3 text-lg sm:text-xl poppins-semibold">
                                 Please raise your query here
-                            </p>
-                            <form className="pt-2" onSubmit={handleSubmit}>
+                            </p> */}
+                            {/* <form className="pt-2" onSubmit={handleSubmit}>
                                 <div className="grid sm:grid-cols-2 gap-6">
                                     <div className="col-span-2 sm:col-span-1">
                                         <label className="">Name*</label>
@@ -317,7 +317,8 @@ const ContactComponent = () => {
                                     </div>
                                 </div>
                                 <p className="pt-2">Thank you for choosing Bright DiGi Gold.</p>
-                            </form>
+                            </form> */}
+                            <img src="/contact.gif" alt="Contact Us" className="w-[100%] h-auto" />
                         </section>
                     </div>
                 </main>

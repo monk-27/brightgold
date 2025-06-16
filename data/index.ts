@@ -121,7 +121,7 @@ export const testimonials1 = [
       "❝These are testing times of our resilience. But by sustainably adapting and keeping our focus unaltered, progress would be a breeze to attain. Because together, we definitely can! ❞",
     name: "Mr. Ashish Gupta ",
     img: "/ashishgupta.png",
-    title: "( CEO )",
+    title: "Designated Partner/ Principal Officer",
   },
 ];
 export const testimonials = [
@@ -131,9 +131,9 @@ export const testimonials = [
       "We want to be the best, most accurate and reliable gold refiner.",
     quote:
       "❝These are testing times of our resilience. But by sustainably adapting and keeping our focus unaltered, progress would be a breeze to attain. Because together, we definitely can! ❞",
-    name: "Mr. Ashish Gupta ",
+    name: "Vinay Goyal",
     img: "/ashishgupta.png",
-    title: "( CEO )",
+    title: "CEO",
   },
 ];
 export const companies = [

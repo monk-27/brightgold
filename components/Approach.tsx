@@ -3,8 +3,26 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { association, companies } from "@/data";
 
 const Approach = () => {
+
+  const fadeIn = (index: any) => ({
+    hidden: {
+      x: 100,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 0.75,
+        delay: index * 0.2,
+        ease: "easeOut",
+      },
+    },
+  });
   return (
     <section className="w-full py-20">
       <h1 className="heading">
@@ -50,6 +68,63 @@ const Approach = () => {
             colors={[[125, 211, 252]]}
           />
         </Card>
+      </div>
+      <div className=" py-12  border-1 border-white rounded-md  mt-12 sm:mt-16">
+        {/* Trusted By Section */}
+        <span className="block text-4xl sm:text-5xl text-white text-center font-bold mb-8 sm:mb-12">
+          Trusted By
+        </span>
+        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+          {companies.map((company, index) => (
+            <motion.div
+              className="relative flex items-center justify-center w-32 sm:w-40"
+              key={company.id}
+              custom={index}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.25 }}
+              variants={fadeIn(index)}
+            >
+              <div className="flex flex-col items-center">
+                <img
+                  src={company.img}
+                  className="w-20 h-20 sm:w-24 sm:h-24 object-contain mb-3"
+                  alt={company.name}
+                />
+                <span className="text-center text-gray-100 text-xs sm:text-sm">
+                  {company.name}
+                </span>
+              </div>
+              {index < companies.length - 1 && (
+                <div className="absolute right-[-24px] sm:right-[-32px] top-0 bottom-0 w-[1px] bg-white/20"></div>
+              )}
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Associations and Recognitions Section */}
+        <span className="block text-4xl sm:text-5xl text-white text-center font-bold mt-12 sm:mt-16 mb-8 sm:mb-12">
+          Associations and Recognitions
+        </span>
+        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+          {association.map((assoc, index) => (
+            <motion.div
+              key={assoc.id}
+              custom={index}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.25 }}
+              variants={fadeIn(index)}
+              className="flex items-center justify-center w-32 sm:w-40"
+            >
+              <img
+                src={assoc.img}
+                alt={assoc.name}
+                className="w-20 h-20 sm:w-24 sm:h-24 object-contain"
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
