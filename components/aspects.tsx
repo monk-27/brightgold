@@ -128,7 +128,7 @@ const FundamentalAspects = () => {
                 >
                     <div className="mx-auto px-4 sm:px-6 lg:px-16">
                         <h1 className="text-center text-white text-3xl sm:text-5xl font-extrabold mb-12">
-                            Fundamental Aspects
+                            Trusted Refining Solutions
                         </h1>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {bars.slice(0, 3).map((item, index) => (

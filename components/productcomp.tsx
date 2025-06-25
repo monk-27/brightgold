@@ -277,16 +277,16 @@ const ProductComponent = () => {
                         viewport={{ once: false, amount: 0.25 }}
                         className=""
                     >
-                        <div className="flex items-center justify-center px-4 lg:px-52">
-                            <motion.div variants={fadeIn("left", "spring", 0.2, 1)}>
+                        <div className="flex items-center justify-center mt-12">
+                            {/* <motion.div variants={fadeIn("left", "spring", 0.2, 1)}>
                                 <img className="z-20 relative" src="/1000gmbar.png" alt="1 kg gold bar" />
-                            </motion.div>
+                            </motion.div> */}
                             <motion.div variants={textVariant(1.1)}>
-                                <img className="-mt-28 z-20 relative" src="/minted-coins.png" alt="minted coins" />
+                                <img className="-mt-28 z-20 relative " src="/barstacks.png" alt="minted coins" />
                             </motion.div>
-                            <motion.div variants={fadeIn("right", "spring", 0.2, 1)}>
+                            {/* <motion.div variants={fadeIn("right", "spring", 0.2, 1)}>
                                 <img className="z-20 relative h-110" src="/100gmbar.png" alt="100 gm gold bar" />
-                            </motion.div>
+                            </motion.div> */}
                         </div>
                         <motion.p
                             variants={fadeIn("bottom", "spring", 0.2, 1)}
@@ -311,7 +311,7 @@ const ProductComponent = () => {
                                 999 Gold is the finest quality of fine (Pure) Gold, as the karate of Gold reduces it means the existence of other metals percentage, & we bring to you the purest form.
                             </p>
                             <motion.div variants={fadeIn("right", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl">
-                                <img src="/1000gmbar.png" className="mx-auto h-72" alt="1 kg gold bar" />
+                                <img src="/1kg999.png" className="mx-auto h-72" alt="1 kg gold bar" />
                             </motion.div>
                             <h1 className="col-span-2 text-3xl sm:text-5xl text-gold01 text-center font-extrabold leading-tight mb-0 sm:mb-6">
                                 100g GOLD BAR

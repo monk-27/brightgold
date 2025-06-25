@@ -10,7 +10,21 @@ import Link from "next/link";
 const FrequentCoins = () => {
   return (
     <div className="py-20 bg-[#13162D]">
-      <div className="flex justify-center mb-6">
+
+
+      <h1 className="heading">
+        GOLD IS LOVE, <span className=" text-yellow-500">ISN'T IT?</span>
+      </h1>
+      <br />
+      <h2 className="heading2 text-yellow-500">
+        Our Premium Products & Services
+      </h2>
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+        {bars.map((item) => (
+          <CardItem key={item.id} item={item} />
+        ))}
+      </div>
+      <div className="flex justify-center m-6">
         <Link href="/products">
           <button className="relative inline-flex items-center px-6 py-2 text-lg font-semibold text-yellow-500 bg-transparent border border-purple rounded-full overflow-hidden group">
             <span className="relative z-10">View All Products</span>
@@ -18,16 +32,7 @@ const FrequentCoins = () => {
           </button>
         </Link>
       </div>
-
-      <h1 className="heading">
-        GOLD IS LOVE, <span className="text-yellow-500">ISN'T IT?</span>
-      </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {bars.map((item) => (
-          <CardItem key={item.id} item={item} />
-        ))}
-      </div>
-    </div>
+    </div >
   );
 };
 
@@ -83,7 +88,7 @@ const CardItem = ({ item }: any) => {
             ))}
           </div>
 
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <button
               onClick={() => setIsExpanded(!isExpanded)}
               className="flex lg:text-xl md:text-xs text-sm text-yellow-500 focus:outline-none"
@@ -91,7 +96,7 @@ const CardItem = ({ item }: any) => {
               {isExpanded ? "Read Less" : "Read More"}
             </button>
             <FaLocationArrow className="ms-3" color="#F1E20DFF" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
