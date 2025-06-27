@@ -168,7 +168,7 @@ const ContactComponent = () => {
                         </div>
 
                         <h1 className="text-6xl lg:text-8xl font-extralight text-white mb-6 tracking-tight">
-                            Get in <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Touch</span>
+                            Get in <span className="text-yellow-500 ">Touch</span>
                         </h1>
 
                         <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
@@ -382,30 +382,7 @@ const ContactComponent = () => {
                                                     Join thousands of partners who trust our expertise in gold refining. Precision and reliability in every project.
                                                 </p>
 
-                                                <div className="flex items-center justify-between">
-                                                    <div className="flex items-center text-blue-300 hover:text-blue-200 transition-colors duration-300 cursor-pointer group/btn">
-                                                        <div className="w-12 h-12 bg-blue-500/20 backdrop-blur-sm rounded-xl flex items-center justify-center mr-4 group-hover/btn:bg-blue-500/30 transition-colors duration-300">
-                                                            <Send className="w-6 h-6 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                                                        </div>
-                                                        <div>
-                                                            <div className="font-semibold text-lg">Start Refining</div>
-                                                            <div className="text-sm text-gray-300">Free consultation</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="flex space-x-3">
-                                                        <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/25 transition-colors duration-300\\/
-                                                    cursor-pointer group/social">
-                                                            <span className="text-white font-bold text-sm group-hover/social:scale-110 transition-transform duration-300">f</span>
-                                                        </div>
-                                                        <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/25 transition-colors duration-300 cursor-pointer group/social">
-                                                            <span className="text-white font-bold text-sm group-hover/social:scale-110 transition-transform duration-300">tw</span>
-                                                        </div>
-                                                        <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/25 transition-colors duration-300 cursor-pointer group/social">
-                                                            <span className="text-white font-bold text-sm group-hover/social:scale-110 transition-transform duration-300">in</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                {/* */}
 
                                                 {/* Stats */}
                                                 <div className="flex items-center justify-between mt-8 pt-8 border-t border-white/20">
