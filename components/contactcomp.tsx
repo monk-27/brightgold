@@ -249,7 +249,7 @@ const ContactComponent = () => {
                                                 <div className="flex-1">
                                                     <h3 className="text-white font-semibold text-xl mb-2">Email Us</h3>
                                                     <p className="text-gray-400 text-sm mb-3">Prompt responses within 4 hours</p>
-                                                    <p className="text-blue-400 font-semibold text-lg">info@goldrefinery.com</p>
+                                                    <p className="text-blue-400 font-semibold text-lg">connect@brightgold.com</p>
                                                 </div>
                                                 <div className="text-right">
                                                     <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Response Time</div>
@@ -272,7 +272,7 @@ const ContactComponent = () => {
                                                 <div className="flex-1">
                                                     <h3 className="text-white font-semibold text-xl mb-2">Call Us</h3>
                                                     <p className="text-gray-400 text-sm mb-3">Speak with our refining experts</p>
-                                                    <p className="text-emerald-400 font-semibold text-lg">+1 (555) 123-4567</p>
+                                                    <p className="text-emerald-400 font-semibold text-lg">011 43093345</p>
                                                 </div>
                                                 <div className="text-right">
                                                     <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Availability</div>
@@ -294,15 +294,15 @@ const ContactComponent = () => {
                                                 </div>
                                                 <div className="flex-1">
                                                     <h3 className="text-white font-semibold text-xl mb-2">Visit Us</h3>
-                                                    <p className="text-gray-400 text-sm mb-3">Tour our state-of-the-art refinery</p>
+                                                    <p className="text-gray-400 text-sm mb-3">Bright Metal Refiners</p>
                                                     <p className="text-purple-400 font-semibold text-lg">
-                                                        123 Gold Street<br />
-                                                        <span className="text-base">New York, NY 10007</span>
+                                                        416 World Trade Center,<br />
+                                                        <span className="text-base">Babar Road, New Delhi - 110001</span>
                                                     </p>
                                                 </div>
                                                 <div className="text-right">
                                                     <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Floor</div>
-                                                    <div className="text-sm font-semibold text-purple-400">10th</div>
+                                                    <div className="text-sm font-semibold text-purple-400">4th</div>
                                                 </div>
                                             </div>
                                         </div>
