@@ -69,7 +69,7 @@ const Approach = () => {
           />
         </Card>
       </div>
-      <div className="py-6 rounded-md">
+      <div className="hidden sm:block py-6 rounded-md">
         {/* Trusted By Section */}
         <span className="block text-4xl sm:text-5xl text-yellow-500 text-center font-bold mb-8">
           Trusted By
@@ -124,6 +124,61 @@ const Approach = () => {
                 />
               </div>
             </motion.div>
+          ))}
+        </div>
+      </div>
+
+      <div className="block sm:hidden py-6 rounded-md">
+        {/* Trusted By Section */}
+        <span className="block text-4xl sm:text-5xl text-yellow-500 text-center font-bold mb-8">
+          Trusted By
+        </span>
+        <div className="flex flex-row flex-nowrap justify-start gap-4 sm:gap-48 overflow-x-hidden sm:flex-wrap sm:justify-center px-4 sm:px-0">
+          {companies.map((company, index) => (
+            <div
+              className="flex items-center justify-center w-24 sm:w-144 lg:w-196 flex-shrink-0"
+              key={company.id}
+            // custom={index}
+            // initial="hidden"
+            // whileInView="show"
+            // viewport={{ once: false, amount: 0.25 }}
+            // variants={fadeIn(index)}
+            >
+              <div className="flex flex-col items-center">
+                <img
+                  src={company.img}
+                  className="w-24 h-24 sm:w-128 sm:h-128 lg:w-196 lg:h-196 object-contain mb-0 sm:mb-6"
+                  alt={company.name}
+                />
+              </div>
+
+            </div>
+          ))}
+        </div>
+
+        {/* Associations and Recognitions Section */}
+        <span className="block text-4xl sm:text-5xl text-yellow-500 text-center font-bold mt-8 py-2 sm:py-6 mb-8">
+          Associations and Recognitions
+        </span>
+        <div className="flex flex-row flex-nowrap justify-start gap-4 sm:gap-12 lg:gap-16 overflow-x-hidden sm:flex-wrap sm:justify-center px-4 sm:px-0">
+          {association.map((assoc, index) => (
+            <div
+              className="flex items-center justify-center w-28 sm:w-144 lg:w-192 flex-shrink-0"
+              key={assoc.id}
+            // custom={index}
+            // initial="hidden"
+            // whileInView="show"
+            // viewport={{ once: false, amount: 0.25 }}
+            // variants={fadeIn(index)}
+            >
+              <div className="flex flex-col items-center">
+                <img
+                  src={assoc.img}
+                  className="w-24 h-24 sm:w-128 sm:h-128 lg:w-176 lg:h-176 object-contain mb-0 sm:mb-6"
+                  alt={assoc.name}
+                />
+              </div>
+            </div>
           ))}
         </div>
       </div>
