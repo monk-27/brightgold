@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Mail, Phone, MapPin, Clock, Send, ArrowRight, Star, Award, Users } from 'lucide-react';
 
 const ContactComponent = () => {
     const [formData, setFormData] = useState({
@@ -145,185 +146,304 @@ const ContactComponent = () => {
     };
 
     return (
-        <div className="min-h-screen  bg-[#13162D] flex items-center justify-center p-20">
 
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <main className="">
-                    <span className="text-white py-6 text-center sm:text-lg sm:poppins-semibold">
+        <div className="min-h-screen bg-gradient-to-br from-[#0A0D1A] via-[#13162D] to-[#1E2347] relative overflow-hidden">
 
-                    </span>
-                    <p className="text-white py-12  text-xl text-center sm:text-3xl sm:poppins-semibold">
-                        Contact us
-                    </p>
+            {/* Animated Background Elements */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500/8 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-500/8 rounded-full blur-3xl animate-pulse delay-1000"></div>
+                <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-indigo-500/6 rounded-full blur-3xl animate-pulse delay-500"></div>
+                <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-cyan-500/6 rounded-full blur-3xl animate-pulse delay-2000"></div>
+            </div>
 
-                    <div className="w-full rounded relative md:flex justify-end">
-                        <div className="md:w-2/5 border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none rounded-lg p-6 mb-4 md:mb-0 md:absolute z-30 top-12 left-0 t hover:scale-110 ease-in-out" style={{
-                            background: "rgb(4,7,29)",
-                            backgroundColor:
-                                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-                        }}>
-                            <p className="text-3xl text-white text-center text-gold01 extrabold">
-                                Get in Touch
-                            </p>
-                            {/* Static Card 1: CALL US */}
-                            <Link href="tel:9289480035">
-                                <div className="py-6 sm:min-h-[110px] overflow-hidden flex flex-col items-center">
-                                    <Image
-                                        className="mb-1"
-                                        src="https://www.brightdigigold.com/images/telephone-call.png"
-                                        alt="CALL US"
-                                        width={30}
-                                        height={30}
-                                        style={{ maxWidth: "100%", height: "auto" }}
-                                    />
-                                    <div className="bold text-base mt-2 text-white">CALL US</div>
-                                    <div className="px-4 py-2 text-center text-white">
-                                        01143093345
-                                    </div>
-                                </div>
-                            </Link>
-                            {/* Static Card 2: MAIL US */}
-                            <Link href="mailto:connect@brightgold.com">
-                                <div className="py-6 sm:min-h-[110px] overflow-hidden flex flex-col items-center">
-                                    <Image
-                                        className="mb-1"
-                                        src="https://brightdigigold.s3.ap-south-1.amazonaws.com/Mail+icon.png"
-                                        alt="MAIL US"
-                                        width={30}
-                                        height={30}
-                                        style={{ maxWidth: "100%", height: "auto" }}
-                                    />
-                                    <div className="bold text-base mt-2 text-white">MAIL US</div>
-                                    <div className="px-4 py-2 text-center text-white">
-                                        connect@brightgold.com
-                                    </div>
-                                </div>
-                            </Link>
-                            {/* Static Card 3: REACH US */}
-                            <Link href="">
-                                <div className="py-6 sm:min-h-[110px] overflow-hidden flex flex-col items-center">
-                                    <Image
-                                        className="mb-1"
-                                        src="https://www.brightdigigold.com/images/placeholder.png"
-                                        alt="REACH US"
-                                        width={30}
-                                        height={30}
-                                        style={{ maxWidth: "100%", height: "auto" }}
-                                    />
-                                    <div className="bold text-base mt-2 text-white">REACH US</div>
-                                    <div
-                                        className="px-4 py-2 text-center text-white"
-                                        dangerouslySetInnerHTML={{
-                                            __html: "Bright Metal Refiners<br />416, 4th Floor, World Trade Center, Babar Road, New Delhi - 110001",
-                                        }}
-                                    />
-                                </div>
-                            </Link>
+            {/* Header Section */}
+            <div className="relative z-10 pt-12 pb-8">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="text-center">
+                        <div className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-2 mb-8">
+                            <Star className="w-4 h-4 text-yellow-400 mr-2" />
+                            <span className="text-sm text-gray-300 font-medium">Excellence in Gold Refining</span>
                         </div>
-                        <section className="w-full md:w-3/4 bg-gradient-to-br from-[#15425E] to-[#15425E]] px-4 py-4 sm:py-10 rounded-lg md:pl-40 lg:pl-40 xl:pl-56">
-                            {/* <p className="pb-3 text-lg sm:text-xl poppins-semibold">
-                                Please raise your query here
-                            </p> */}
-                            {/* <form className="pt-2" onSubmit={handleSubmit}>
-                                <div className="grid sm:grid-cols-2 gap-6">
-                                    <div className="col-span-2 sm:col-span-1">
-                                        <label className="">Name*</label>
-                                        <br />
-                                        <input
-                                            name="name"
-                                            type="text"
-                                            className=" border-2 border-gray-800 rounded-md px-4 py-3 w-full text-white"
-                                            placeholder="Enter Your Name"
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.name && <div className="text-red-500">{errors.name}</div>}
+
+                        <h1 className="text-6xl lg:text-8xl font-extralight text-white mb-6 tracking-tight">
+                            Get in <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Touch</span>
+                        </h1>
+
+                        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
+                            Partner with us for top-tier gold refining services. Precision, purity, and trust in every process.
+                        </p>
+
+                        <div className="flex items-center justify-center space-x-8 text-sm text-gray-400">
+                            <div className="flex items-center">
+                                <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+                                <span>Available Now</span>
+                            </div>
+                            <div className="flex items-center">
+                                <Award className="w-4 h-4 mr-2 text-yellow-400" />
+                                <span>Industry-Leading Standards</span>
+                            </div>
+                            <div className="flex items-center">
+                                <Users className="w-4 h-4 mr-2 text-blue-400" />
+                                <span>5k+ Satisfied Partners</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Main Content */}
+            <div className="relative z-10 px-6 pb-20">
+                <div className="max-w-7xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+
+                        {/* Left Side - Contact Information */}
+                        <div className="lg:col-span-5 space-y-10">
+
+                            {/* Introduction Card */}
+                            <div className="relative group">
+                                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                                <div className="relative bg-white/8 backdrop-blur-xl border border-white/20 rounded-3xl p-10 hover:bg-white/12 transition-all duration-500">
+                                    <div className="flex items-start mb-6">
+                                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mr-6">
+                                            <Send className="w-8 h-8 text-white" />
+                                        </div>
+                                        <div>
+                                            <h2 className="text-3xl font-light text-white mb-2">
+                                                Refine with Confidence
+                                            </h2>
+                                            <div className="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400"></div>
+                                        </div>
                                     </div>
-                                    <div className="col-span-2 sm:col-span-1">
-                                        <label className="">Email ID*</label>
-                                        <br />
-                                        <input
-                                            name="email"
-                                            type="email"
-                                            className="  border-2 border-gray-800 rounded-md px-4 py-3 w-full text-white"
-                                            placeholder="Enter Your Email"
-                                            value={formData.email}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.email && <div className="text-red-500">{errors.email}</div>}
-                                    </div>
-                                    <div className="col-span-2 sm:col-span-1">
-                                        <label className="">City*</label>
-                                        <br />
-                                        <input
-                                            name="city"
-                                            type="text"
-                                            className="border-2  border-gray-800 rounded-md px-4 py-3 w-full text-white"
-                                            placeholder="Enter Your City"
-                                            value={formData.city}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.city && <div className="text-red-500">{errors.city}</div>}
-                                    </div>
-                                    <div className="col-span-2 sm:col-span-1">
-                                        <label className="text-black">Mobile No.*</label>
-                                        <br />
-                                        <input
-                                            name="mobile"
-                                            type="text"
-                                            className=" border-2  border-gray-800 rounded-md px-4 py-3 w-full text-white"
-                                            placeholder="Enter Your Mobile No."
-                                            value={formData.mobile}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.mobile && <div className="text-red-500">{errors.mobile}</div>}
-                                    </div>
-                                    <div className="col-span-2">
-                                        <label className="text-black">Message*</label>
-                                        <br />
-                                        <textarea
-                                            name="message"
-                                            placeholder="Write Your Query Here"
-                                            className="border-2  border-gray-800 rounded-md px-4 py-3 w-full text-white"
-                                            rows={4}
-                                            value={formData.message}
-                                            onChange={handleChange}
-                                        />
-                                        {errors.message && <div className="text-red-500">{errors.message}</div>}
-                                    </div>
-                                    <div className="col-span-2">
-                                        <label className="text-black">Attachment</label>
-                                        <br />
-                                        <input
-                                            type="file"
-                                            id="document"
-                                            className=" border-2  border-gray-800 rounded-md px-4 py-3 w-full text-white"
-                                            name="document"
-                                            onChange={handleFileChange}
-                                        />
-                                        {formData.document && (
-                                            <p className="text-black">{formData.document.name}</p>
-                                        )}
-                                        {errors.document && <div className="text-red-500">{errors.document}</div>}
-                                    </div>
-                                    <div className="col-12">
-                                        <button
-                                            className="button text-white py-2 px-6 bg-theme cursor-pointer rounded-lg"
-                                            type="submit"
-                                        >
-                                            SEND
-                                        </button>
+
+                                    <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                                        Start your gold refining journey with us. From raw materials to pure gold, we deliver unmatched expertise and reliability.
+                                    </p>
+
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300 cursor-pointer group">
+                                            <span className="text-sm font-semibold tracking-wide uppercase">Request a Quote</span>
+                                            <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
+                                        </div>
+
+                                        <div className="text-right">
+                                            <div className="text-2xl font-bold text-white">10-6</div>
+                                            <div className="text-xs text-gray-400 uppercase tracking-wide">Daily Support</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <p className="pt-2">Thank you for choosing Bright DiGi Gold.</p>
-                            </form> */}
-                            <img src="/contact.gif" alt="Contact Us" className="w-[100%] h-auto" />
-                        </section>
+                            </div>
+
+                            {/* Contact Methods */}
+                            <div className="space-y-6">
+                                {/* Email */}
+                                <div className="group cursor-pointer">
+                                    <div className="relative">
+                                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
+                                        <div className="relative bg-white/6 backdrop-blur-xl border border-white/15 rounded-2xl p-8 hover:bg-white/10 hover:border-white/25 transition-all duration-300">
+                                            <div className="flex items-center">
+                                                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                                                    <Mail className="w-7 h-7 text-white" />
+                                                </div>
+                                                <div className="flex-1">
+                                                    <h3 className="text-white font-semibold text-xl mb-2">Email Us</h3>
+                                                    <p className="text-gray-400 text-sm mb-3">Prompt responses within 4 hours</p>
+                                                    <p className="text-blue-400 font-semibold text-lg">info@goldrefinery.com</p>
+                                                </div>
+                                                <div className="text-right">
+                                                    <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Response Time</div>
+                                                    <div className="text-sm font-semibold text-green-400">{"< 4 Hours"}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Phone */}
+                                <div className="group cursor-pointer">
+                                    <div className="relative">
+                                        <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
+                                        <div className="relative bg-white/6 backdrop-blur-xl border border-white/15 rounded-2xl p-8 hover:bg-white/10 hover:border-white/25 transition-all duration-300">
+                                            <div className="flex items-center">
+                                                <div className="w-16 h-16 bg-gradient-to-br from-emerald-5001 to-teal-500 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                                                    <Phone className="w-7 h-7 text-white" />
+                                                </div>
+                                                <div className="flex-1">
+                                                    <h3 className="text-white font-semibold text-xl mb-2">Call Us</h3>
+                                                    <p className="text-gray-400 text-sm mb-3">Speak with our refining experts</p>
+                                                    <p className="text-emerald-400 font-semibold text-lg">+1 (555) 123-4567</p>
+                                                </div>
+                                                <div className="text-right">
+                                                    <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Availability</div>
+                                                    <div className="text-sm font-semibold text-emerald-400">Mon-Sat 10AM-6PM</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Address */}
+                                <div className="group cursor-pointer">
+                                    <div className="relative">
+                                        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
+                                        <div className="relative bg-white/6 backdrop-blur-xl border border-white/15 rounded-2xl p-8 hover:bg-white/10 hover:border-white/25 transition-all duration-300">
+                                            <div className="flex items-center">
+                                                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                                                    <MapPin className="w-7 h-7 text-white" />
+                                                </div>
+                                                <div className="flex-1">
+                                                    <h3 className="text-white font-semibold text-xl mb-2">Visit Us</h3>
+                                                    <p className="text-gray-400 text-sm mb-3">Tour our state-of-the-art refinery</p>
+                                                    <p className="text-purple-400 font-semibold text-lg">
+                                                        123 Gold Street<br />
+                                                        <span className="text-base">New York, NY 10007</span>
+                                                    </p>
+                                                </div>
+                                                <div className="text-right">
+                                                    <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Floor</div>
+                                                    <div className="text-sm font-semibold text-purple-400">10th</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Business Hours */}
+                            <div className="relative group">
+                                <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
+                                <div className="relative bg-white/6 backdrop-blur-xl border border-white/15 rounded-3xl p-10 hover:bg-white/10 transition-all duration-300">
+                                    <div className="flex items-center mb-8">
+                                        <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-5">
+                                            <Clock className="w-7 h-7 text-white" />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-white font-semibold text-2xl">Operating Hours</h3>
+                                            <p className="text-gray-400 text-sm">Ready to serve you</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-4">
+                                        <div className="flex justify-between items-center py-3 border-b border-white/10">
+                                            <span className="text-gray-300 font-medium">Monday - Saturday</span>
+                                            <span className="text-white font-semibold">10:00 AM - 6:00 PM</span>
+                                        </div>
+                                        <div className="flex justify-between items-center py-3 border-b border-white/10">
+                                            <span className="text-gray-300 font-medium">Sunday</span>
+                                            <span className="text-orange-400 font-semibold">Closed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right Side - Image Section */}
+                        <div className="lg:col-span-7">
+                            <div className="relative h-full min-h-[700px] lg:min-h-[900px] rounded-3xl overflow-hidden group">
+                                {/* Image Container */}
+                                <div className="absolute inset-0">
+                                    <img
+                                        src="/contact.jpg"
+                                        alt="State-of-the-art gold refinery facility"
+                                        className="w-full h-full object-contain sm:object-cover group-hover:scale-105 transition-transform duration-1000"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-purple-900/30 to-cyan-900/40"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/50"></div>
+                                </div>
+
+                                {/* Floating Decorative Elements */}
+                                <div className="absolute top-12 right-12 w-40 h-40 bg-blue-400/15 rounded-full blur-3xl animate-pulse"></div>
+                                <div className="absolute bottom-32 left-12 w-32 h-32 bg-purple-400/15 rounded-full blur-2xl animate-pulse delay-1000"></div>
+                                <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-cyan-400/15 rounded-full blur-xl animate-pulse delay-500"></div>
+
+                                {/* Content Overlay */}
+                                <div className="absolute inset-0 flex flex-col justify-end p-10 lg:p-16">
+                                    <div className="max-w-lg">
+                                        <div className="relative group/card">
+                                            <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-3xl blur-xl"></div>
+                                            <div className="relative bg-white/10 backdrop-blur-2xl border border-white/30 rounded-3xl p-10 hover:bg-white/15 transition-all duration-500">
+
+                                                {/* Badge */}
+                                                <div className="inline-flex items-center bg-gradient-to-r from-yellow-400/20 to-orange-400/20 backdrop-blur-sm border border-yellow-400/30 rounded-full px-4 py-2 mb-6">
+                                                    <Star className="w-4 h-4 text-yellow-400 mr-2" />
+                                                    <span className="text-yellow-300 text-sm font-semibold">Gold Standard Service</span>
+                                                </div>
+
+                                                <h2 className="text-4xl lg:text-5xl font-light text-white mb-6 leading-tight">
+                                                    Transform Your
+                                                    <span className="block bg-gradient-to-r from-blue-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent font-normal">
+                                                        Gold into Purity
+                                                    </span>
+                                                </h2>
+
+                                                <p className="text-gray-200 text-lg mb-10 leading-relaxed">
+                                                    Join thousands of partners who trust our expertise in gold refining. Precision and reliability in every project.
+                                                </p>
+
+                                                <div className="flex items-center justify-between">
+                                                    <div className="flex items-center text-blue-300 hover:text-blue-200 transition-colors duration-300 cursor-pointer group/btn">
+                                                        <div className="w-12 h-12 bg-blue-500/20 backdrop-blur-sm rounded-xl flex items-center justify-center mr-4 group-hover/btn:bg-blue-500/30 transition-colors duration-300">
+                                                            <Send className="w-6 h-6 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                                                        </div>
+                                                        <div>
+                                                            <div className="font-semibold text-lg">Start Refining</div>
+                                                            <div className="text-sm text-gray-300">Free consultation</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="flex space-x-3">
+                                                        <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/25 transition-colors duration-300\\/
+                                                    cursor-pointer group/social">
+                                                            <span className="text-white font-bold text-sm group-hover/social:scale-110 transition-transform duration-300">f</span>
+                                                        </div>
+                                                        <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/25 transition-colors duration-300 cursor-pointer group/social">
+                                                            <span className="text-white font-bold text-sm group-hover/social:scale-110 transition-transform duration-300">tw</span>
+                                                        </div>
+                                                        <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/25 transition-colors duration-300 cursor-pointer group/social">
+                                                            <span className="text-white font-bold text-sm group-hover/social:scale-110 transition-transform duration-300">in</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                {/* Stats */}
+                                                <div className="flex items-center justify-between mt-8 pt-8 border-t border-white/20">
+                                                    <div className="text-center">
+                                                        <div className="text-2xl font-bold text-white">5k+</div>
+                                                        <div className="text-xs text-gray-300 uppercase tracking-wide">Partners</div>
+                                                    </div>
+                                                    <div className="text-center">
+                                                        <div className="text-2xl font-bold text-white">99.9%</div>
+                                                        <div className="text-xs text-gray-300 uppercase tracking-wide">Purity</div>
+                                                    </div>
+                                                    <div className="text-center">
+                                                        <div className="text-2xl font-bold text-white">50+</div>
+                                                        <div className="text-xs text-gray-300 uppercase tracking-wide">Years Experience</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Decorative Grid Pattern */}
+                                <div className="absolute inset-0 opacity-5">
+                                    <div className="absolute inset-0" style={{
+                                        backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.4) 1px, transparent 0)`,
+                                        backgroundSize: '60px 60px'
+                                    }}></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </main>
+                </div>
             </div>
         </div>
+
+
+
+
     );
 };
 
