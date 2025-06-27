@@ -9,7 +9,7 @@ const Technique = () => {
         REFINING <span className="text-yellow-500">TECHNIQUE</span>
       </h1>
 
-      <div className="w-full mt-12 p-20 grid lg:grid-cols-1 grid-cols-1 gap-10">
+      <div className="w-full mt-12 p-0 sm:p-20 grid lg:grid-cols-1 grid-cols-1 gap-10">
         {technique.map((card) => (
           <Button
             key={card.id}

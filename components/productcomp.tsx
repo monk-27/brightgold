@@ -90,7 +90,7 @@
 //                 <motion.div initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25 }}>
 //                     <div className="mx-auto px-4 sm:px-6 lg:px-16 relative">
 //                         <div className="grid sm:grid-cols-2 gap-4 place-items-center">
-//                             <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-700 text-center font-extrabold leading-tight mb-0 sm:mb-6">
+//                             <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-500 text-center font-extrabold leading-tight mb-0 sm:mb-6">
 //                                 1 Kg GOLD BAR (999)
 //                             </h1>
 //                             <p className="col-span-2 sm:col-span-1 text-white text-left leading-8 mb-4 mt-6 text-xl">
@@ -99,7 +99,7 @@
 //                             <motion.div variants={fadeIn("right", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl">
 //                                 <img src="/1kg999.png" className="mx-auto h-72" alt="1 kg gold bar" />
 //                             </motion.div>
-//                             <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-700 text-center font-extrabold leading-tight mb-0 sm:mb-6">
+//                             <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-500 text-center font-extrabold leading-tight mb-0 sm:mb-6">
 //                                 1kg GOLD BAR (995)
 //                             </h1>
 //                             <motion.div variants={fadeIn("left", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl px-12">
@@ -116,7 +116,7 @@
 //                 <motion.div initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25 }}>
 //                     <div className="mx-auto px-4 sm:px-6 lg:px-16 relative">
 //                         <div className="grid sm:grid-cols-2 gap-4 place-items-center">
-//                             <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-700 text-center font-extrabold leading-tight mb-0 sm:mb-6">
+//                             <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-500 text-center font-extrabold leading-tight mb-0 sm:mb-6">
 //                                 100 Gm GOLD BAR (999)
 //                             </h1>
 //                             <p className="col-span-2 sm:col-span-1 text-white text-left leading-8 mb-4 mt-6 text-xl">
@@ -125,7 +125,7 @@
 //                             <motion.div variants={fadeIn("right", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl">
 //                                 <img src="/999100.png" className="mx-auto h-72" alt="1 kg gold bar" />
 //                             </motion.div>
-//                             <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-700 text-center font-extrabold leading-tight mb-0 sm:mb-6">
+//                             <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-500 text-center font-extrabold leading-tight mb-0 sm:mb-6">
 //                                 100 Gm GOLD BAR (995)
 //                             </h1>
 //                             <motion.div variants={fadeIn("left", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl px-12">
@@ -269,7 +269,7 @@ export const bars = [
         id: 1,
         title: "GOLD REFINING",
         des: "Bright Gold Refinery brings the purest and finest gold, our gold refining service integrates multiple methodologies. At the time of Gold purchase, impurities worsen the quality of the gold, verifying the trait is essential. We at Bright Gold with our knowledge experts we assist our clients to get the purest form of gold as we extract gold of 995 to 999 fineness. We have utmost love and respect for our mother nature, so we do the best refining while taking care of the environment as well with the pollution reduction through AQUA REGIS process. Recycling precious metals, such as gold ores, scrap gold, silver or even jewellery by using the world’s leading technology and the best machinery in the business. The measure of Karat refers to the amount of gold in an object as compared to another alloy. Gold is more likely to be found in samples with a higher karate. For instance, 24-karat gold is 100% gold. In India, most of the people prefer 22 karat Gold, whereas if we talk about Europeans or USA, they prefer 18 Karat and 14 karat, simultaneously.",
-        img: "/banners.jpg",
+        img: "/Gold Banner.jpg",
         iconLists: [],
         link: "",
     },
@@ -277,7 +277,7 @@ export const bars = [
         id: 2,
         title: "SILVER REFINING",
         des: "“Sterling Silver” term is very commonly used, however this is one of the ways to define the purity of the silver, this means that it contains silver which is at least 92.5% pure! Our experts at Bright Gold Refinery bring the finest and purest form of Sterling Silver. Discussing the extraction and refining methodologies, Bright Gold hosts the latest technological approach to refine the best silver along with protecting our mother nature. Electrolytic refining can refine silver metal. If silver is found in copper-containing ores, then the electrolytic refining method is used to extract silver in pure form. When silver nitrate dissolves copper, it forms crystals of elemental silver. Silver can be sold in many different forms at this purity level, such as bars, powder, granules, and wire - these are the physical forms of silver after the silver refining process. For silver to be sold in the market, the refining process is usually the last step before it is ready to sale. Typically, it needs to meet a minimum of 99.9% purity and in most cases 99.99% purity and in most of the cases 99.99% purity, and in some cases 99.999% purity, depending upon the end-use.",
-        img: "/servicesilverbar.png",
+        img: "/Silver Banner.jpg",
         iconLists: [],
         link: "",
     },
@@ -346,7 +346,7 @@ const ProductComponent = () => {
                 <motion.div initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25 }}>
                     <div className="mx-auto px-4 sm:px-6 lg:px-16 relative">
                         <div className="grid sm:grid-cols-2 gap-4 place-items-center">
-                            <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-700 text-center font-extrabold leading-tight mb-0 sm:mb-6">
+                            <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-500 text-center font-extrabold leading-tight mb-0 sm:mb-6">
                                 1 Kg GOLD BAR (999)
                             </h1>
                             <p className="col-span-2 sm:col-span-1 text-white text-left leading-8 mb-4 mt-6 text-xl">
@@ -355,7 +355,7 @@ const ProductComponent = () => {
                             <motion.div variants={fadeIn("right", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl">
                                 <img src="/1kg999.png" className="mx-auto h-72" alt="1 kg gold bar" />
                             </motion.div>
-                            <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-700 text-center font-extrabold leading-tight mb-0 sm:mb-6">
+                            <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-500 text-center font-extrabold leading-tight mb-0 sm:mb-6">
                                 1kg GOLD BAR (995)
                             </h1>
                             <motion.div variants={fadeIn("left", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl px-12">
@@ -372,7 +372,7 @@ const ProductComponent = () => {
                 <motion.div initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25 }}>
                     <div className="mx-auto px-4 sm:px-6 lg:px-16 relative">
                         <div className="grid sm:grid-cols-2 gap-4 place-items-center">
-                            <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-700 text-center font-extrabold leading-tight mb-0 sm:mb-6">
+                            <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-500 text-center font-extrabold leading-tight mb-0 sm:mb-6">
                                 100 Gm GOLD BAR (999)
                             </h1>
                             <p className="col-span-2 sm:col-span-1 text-white text-left leading-8 mb-4 mt-6 text-xl">
@@ -381,7 +381,7 @@ const ProductComponent = () => {
                             <motion.div variants={fadeIn("right", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl">
                                 <img src="/999100.png" className="mx-auto h-72" alt="1 kg gold bar" />
                             </motion.div>
-                            <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-700 text-center font-extrabold leading-tight mb-0 sm:mb-6">
+                            <h1 className="col-span-2 text-3xl sm:text-5xl text-yellow-500 text-center font-extrabold leading-tight mb-0 sm:mb-6">
                                 100 Gm GOLD BAR (995)
                             </h1>
                             <motion.div variants={fadeIn("left", "spring", 0.5, 0.5)} className="col-span-2 sm:col-span-1 rounded-2xl px-12">

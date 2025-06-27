@@ -71,7 +71,7 @@ const Clients = () => {
 
       <div className="flex flex-col items-center max-lg:mt-10">
         <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
-          <div className="w-full mt-12 p-20 grid lg:grid-cols-1 grid-cols-1 gap-10">
+          <div className="w-full mt-12 p-0 sm:p-20 grid lg:grid-cols-1 grid-cols-1 gap-10">
             {testimonials.map((card) => (
               <Button
                 key={card.id}

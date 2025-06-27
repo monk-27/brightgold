@@ -69,15 +69,15 @@ const Approach = () => {
           />
         </Card>
       </div>
-      <div className=" py-12  border-1 border-white rounded-md  mt-12 sm:mt-16">
+      <div className="py-6 rounded-md">
         {/* Trusted By Section */}
-        <span className="block text-4xl sm:text-5xl text-white text-center font-bold mb-8 sm:mb-12">
+        <span className="block text-4xl sm:text-5xl text-yellow-500 text-center font-bold mb-8">
           Trusted By
         </span>
-        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-48 overflow-hidden">
           {companies.map((company, index) => (
             <motion.div
-              className="relative flex items-center justify-center w-32 sm:w-40"
+              className="relative flex items-center justify-center w-56 sm:w-144 lg:w-196"
               key={company.id}
               custom={index}
               initial="hidden"
@@ -88,40 +88,41 @@ const Approach = () => {
               <div className="flex flex-col items-center">
                 <img
                   src={company.img}
-                  className="w-20 h-20 sm:w-24 sm:h-24 object-contain mb-3"
+                  className="w-56 h-56 sm:w-128 sm:h-128 lg:w-196 lg:h-196 object-contain mb-0 sm:mb-6"
                   alt={company.name}
                 />
-                <span className="text-center text-gray-100 text-xs sm:text-sm">
-                  {company.name}
-                </span>
               </div>
               {index < companies.length - 1 && (
-                <div className="absolute right-[-24px] sm:right-[-32px] top-0 bottom-0 w-[1px] bg-white/20"></div>
+                <div
+                  className="hidden sm:block absolute right-[-60px] top-0 bottom-0 w-[2px] bg-white z-10"
+                ></div>
               )}
             </motion.div>
           ))}
         </div>
 
         {/* Associations and Recognitions Section */}
-        <span className="block text-4xl sm:text-5xl text-white text-center font-bold mt-12 sm:mt-16 mb-8 sm:mb-12">
+        <span className="block text-4xl sm:text-5xl text-yellow-500 text-center font-bold mt-8 py-2 sm:py-6 mb-8">
           Associations and Recognitions
         </span>
-        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-8 sm:gap-12 lg:gap-16 overflow-hidden">
           {association.map((assoc, index) => (
             <motion.div
+              className="relative flex items-center justify-center w-96 sm:w-144 lg:w-192"
               key={assoc.id}
               custom={index}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.25 }}
               variants={fadeIn(index)}
-              className="flex items-center justify-center w-32 sm:w-40"
             >
-              <img
-                src={assoc.img}
-                alt={assoc.name}
-                className="w-20 h-20 sm:w-24 sm:h-24 object-contain"
-              />
+              <div className="flex flex-col items-center">
+                <img
+                  src={assoc.img}
+                  className="w-80 h-80 sm:w-128 sm:h-128 lg:w-176 lg:h-176 object-contain mb-0 sm:mb-6"
+                  alt={assoc.name}
+                />
+              </div>
             </motion.div>
           ))}
         </div>

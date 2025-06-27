@@ -140,19 +140,19 @@ export const companies = [
   {
     id: 1,
     name: "",
-    img: "/union-bank.png",
+    img: "/union.png",
     nameImg: "",
   },
   {
     id: 2,
     name: "",
-    img: "/axis-bank.png",
+    img: "/axis.png",
     nameImg: "",
   },
   {
     id: 3,
     name: "",
-    img: "/icici.webp",
+    img: "/icici.png",
     nameImg: "",
   },
 ];
@@ -160,19 +160,19 @@ export const association = [
   {
     id: 1,
     name: "",
-    img: "/NABTCL.png",
+    img: "/nabl.png",
     nameImg: "",
   },
   {
     id: 2,
     name: "",
-    img: "/BIS.png",
+    img: "/biss.png",
     nameImg: "",
   },
   {
     id: 3,
     name: "",
-    img: "/DGFT.png",
+    img: "/dgft.png",
     nameImg: "",
   },
 ];

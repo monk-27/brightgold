@@ -16,7 +16,7 @@ const WhatWeDoCard = () => {
         >
             <div className="h-full w-full p-5 lg:p-10 relative">
                 <div className="flex flex-col justify-center h-full space-y-6">
-                    <div className="font-sans text-xl lg:text-3xl font-bold text-yellow-400 z-10 mb-2 justify-start">
+                    <div className="font-sans text-xl lg:text-3xl font-bold text-yellow-500 z-10 mb-2 justify-start">
                         What We Do?
                     </div>
                     <div className="font-sans font-extralight text-sm lg:text-base text-white leading-relaxed z-10">
@@ -44,13 +44,13 @@ const WhatWeDoCard = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="absolute inset-0">
+                {/* <div className="absolute inset-0">
                     <img
                         src="/b1.svg" // Replace with your gold wave SVG or image path
                         alt="Background Wave"
                         className="w-full h-full object-cover opacity-50"
                     />
-                </div>
+                </div> */}
             </div>
         </div>
     );
