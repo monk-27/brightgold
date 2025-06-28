@@ -11,7 +11,7 @@
 //         id: 1,
 //         title: "GOLD REFINING",
 //         des: "Bright Gold Refinery brings the purest and finest gold, our gold refining service integrates multiple methodologies. At the time of Gold purchase, impurities worsen the quality of the gold, verifying the trait is essential. We at Bright Gold with our knowledge experts we assist our clients to get the purest form of gold as we extract gold of 995 to 999 fineness. We have utmost love and respect for our mother nature, so we do the best refining while taking care of the environment as well with the pollution reduction through AQUA REGIS process. Recycling precious metals, such as gold ores, scrap gold, silver or even jewellery by using the world’s leading technology and the best machinery in the business. The measure of Karat refers to the amount of gold in an object as compared to another alloy. Gold is more likely to be found in samples with a higher karate. For instance, 24-karat gold is 100% gold. In India, most of the people prefer 22 karat Gold, whereas if we talk about Europeans or USA, they prefer 18 Karat and 14 karat, simultaneously.",
-//         img: "/banners.jpg",
+//         img: "/Gold Banner.jpg",
 //         iconLists: [],
 //         link: "",
 //     },
@@ -19,7 +19,7 @@
 //         id: 2,
 //         title: "SILVER REFINING",
 //         des: "“Sterling Silver” term is very commonly used, however this is one of the ways to define the purity of the silver, this means that it contains silver which is at least 92.5% pure! Our experts at Bright Gold Refinery bring the finest and purest form of Sterling Silver. Discussing the extraction and refining methodologies, Bright Gold hosts the latest technological approach to refine the best silver along with protecting our mother nature. Electrolytic refining can refine silver metal. If silver is found in copper-containing ores, then the electrolytic refining method is used to extract silver in pure form. When silver nitrate dissolves copper, it forms crystals of elemental silver. Silver can be sold in many different forms at this purity level, such as bars, powder, granules, and wire - these are the physical forms of silver after the silver refining process. For silver to be sold in the market, the refining process is usually the last step before it is ready to sale. Typically, it needs to meet a minimum of 99.9% purity and in most cases 99.99% purity and in most of the cases 99.99% purity, and in some cases 99.999% purity, depending upon the end-use.",
-//         img: "/servicesilverbar.png",
+//         img: "/Silver Banner.jpg",
 //         iconLists: [],
 //         link: "",
 //     },
@@ -61,8 +61,8 @@
 //     };
 
 //     return (
-//         <div className="bg-[#13162D] pt-24 sm:pt-36 py-10 relative">
-//             <div className=" mt-24 sm:mt-12">
+//         <div className="bg-[#13162D] pt-24 sm:pt-36 py-10 relative ">
+//             <div className="mt-12 sm:mt-6">
 //                 <div className="grid gap-4">
 //                     <motion.div
 //                         initial="hidden"
@@ -70,12 +70,10 @@
 //                         viewport={{ once: false, amount: 0.25 }}
 //                         className=""
 //                     >
-//                         <div className="flex items-center justify-center mt-12">
-
-//                             <motion.div variants={textVariant(1.1)} className="relative ">
-//                                 <img className="-mt-28 z-20 relative h-full " src="/banners.jpg" alt="minted coins" />
+//                         <div className="flex items-center justify-center mt-6">
+//                             <motion.div variants={textVariant(1.1)} className="relative">
+//                                 <img className="w-full h-auto object-cover" src="/banners.jpg" alt="minted coins" />
 //                             </motion.div>
-
 //                         </div>
 //                         <motion.p
 //                             variants={fadeIn("bottom", "spring", 0.2, 1)}
@@ -206,13 +204,13 @@
 //             <AnimatePresence>
 //                 {selectedCard && (
 //                     <motion.div
-//                         className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 mx-auto"
+//                         className=" fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-x-hidden "
 //                         initial={{ opacity: 0 }}
 //                         animate={{ opacity: 1 }}
 //                         exit={{ opacity: 0 }}
 //                     >
 //                         <motion.div
-//                             className="bg-[#13162D] rounded-lg max-w-lg w-full mx-4 relative border border-white/[0.1]"
+//                             className="bg-[#13162D] rounded-lg w-full  sm:max-w-sm mx-auto p-4 sm:p-6 relative border border-white/[0.1] min-w-0"
 //                             variants={modalVariants}
 //                             initial="hidden"
 //                             animate="visible"
@@ -229,24 +227,26 @@
 //                                     animation: "borderShine 3s linear infinite",
 //                                 }}
 //                             />
-//                             <div className="relative z-10 p-12">
+//                             <div className="relative z-10">
 //                                 <button
 //                                     onClick={handleCloseModal}
-//                                     className="absolute top-4 right-4 text-yellow-500 hover:text-yellow-400"
+//                                     className="absolute top-2 right-2 text-yellow-500 hover:text-yellow-400"
 //                                 >
-//                                     <FaTimes size={24} />
+//                                     <FaTimes size={20} />
 //                                 </button>
 //                                 <div className="flex items-center justify-center mb-4">
 //                                     <img
 //                                         src={selectedCard.img}
 //                                         alt={selectedCard.title}
-//                                         className="w-full h-32 sm:h-40 object-cover rounded-t-lg"
+//                                         className="w-full h-24 sm:h-40 object-cover rounded-t-lg"
 //                                     />
 //                                 </div>
-//                                 <h2 className="text-xl sm:text-2xl font-bold text-white text-center mb-4">
+//                                 <h2 className="text-lg sm:text-2xl font-bold text-white text-center mb-4">
 //                                     {selectedCard.title}
 //                                 </h2>
-//                                 <p className="text-[#BEC1DD] text-sm sm:text-base">{selectedCard.des}</p>
+//                                 <p className="text-[#BEC1DD] text-xs sm:text-base">
+//                                     {selectedCard.des}
+//                                 </p>
 //                             </div>
 //                         </motion.div>
 //                     </motion.div>
@@ -301,13 +301,38 @@ const ProductComponent = () => {
     });
 
     const modalVariants = {
-        hidden: { y: "100vh", opacity: 0 },
+        hidden: {
+            x: window.innerWidth < 640 ? "100vw" : 0,
+            y: window.innerWidth >= 640 ? "100vh" : 0,
+            opacity: 0,
+        },
         visible: {
+            x: 0,
             y: 0,
             opacity: 1,
-            transition: { type: "spring", stiffness: 100, damping: 20, duration: 0.5 },
+            transition: {
+                type: window.innerWidth < 640 ? "tween" : "spring",
+                stiffness: window.innerWidth >= 640 ? 100 : undefined,
+                damping: window.innerWidth >= 640 ? 20 : undefined,
+                duration: window.innerWidth < 640 ? 0.3 : 0.5,
+                ease: window.innerWidth < 640 ? "easeOut" : undefined,
+            },
         },
-        exit: { y: "100vh", opacity: 0, transition: { duration: 0.3, ease: "easeIn" } },
+        exit: {
+            x: window.innerWidth < 640 ? "100vw" : 0,
+            y: window.innerWidth >= 640 ? "100vh" : 0,
+            opacity: 0,
+            transition: {
+                duration: 0.3,
+                ease: "easeIn"
+            },
+        },
+    };
+
+    const drawerVariants = {
+        hidden: { x: "100%" },
+        visible: { x: 0, transition: { type: "tween", duration: 0.3, ease: "easeOut" } },
+        exit: { x: "100%", transition: { duration: 0.3, ease: "easeIn" } },
     };
 
     const handleOpenModal = (item: any) => {
@@ -319,8 +344,11 @@ const ProductComponent = () => {
     };
 
     return (
-        <div className="bg-[#13162D] pt-24 sm:pt-36 py-10 relative">
-            <div className="mt-24 sm:mt-12">
+        <div className="bg-[#13162D] pt-24 sm:pt-36 py-10 relative overflow-x-hidden">
+            <header className="fixed top-0 left-0 w-full bg-[#13162D] z-50 p-4">
+                <h1 className="text-yellow-500 text-center text-2xl font-bold">Bright Gold Refinery</h1>
+            </header>
+            <div className="mt-20 sm:mt-6">
                 <div className="grid gap-4">
                     <motion.div
                         initial="hidden"
@@ -328,7 +356,7 @@ const ProductComponent = () => {
                         viewport={{ once: false, amount: 0.25 }}
                         className=""
                     >
-                        <div className="flex items-center justify-center mt-12">
+                        <div className="flex items-center justify-center mt-6">
                             <motion.div variants={textVariant(1.1)} className="relative">
                                 <img className="w-full h-auto object-cover" src="/banners.jpg" alt="minted coins" />
                             </motion.div>
@@ -461,21 +489,23 @@ const ProductComponent = () => {
             </div>
             <AnimatePresence>
                 {selectedCard && (
-                    <motion.div
-                        className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-x-hidden"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                    >
+                    <>
                         <motion.div
-                            className="bg-[#13162D] rounded-lg w-full max-w-md mx-auto p-4 sm:p-6 relative border border-white/[0.1] min-w-0"
-                            variants={modalVariants}
+                            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={handleCloseModal}
+                        />
+                        <motion.div
+                            className="fixed top-0 right-0 h-full w-full sm:hidden bg-[#13162D] z-50 p-4 border-l border-white/[0.1]"
+                            variants={drawerVariants}
                             initial="hidden"
                             animate="visible"
                             exit="exit"
                         >
                             <div
-                                className="absolute inset-0 rounded-lg border-4 border-transparent"
+                                className="absolute inset-0 border-4 border-transparent"
                                 style={{
                                     background: "linear-gradient(90deg, transparent, #E2CBFF, transparent) border-box",
                                     WebkitMask: "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
@@ -490,26 +520,79 @@ const ProductComponent = () => {
                                     onClick={handleCloseModal}
                                     className="absolute top-2 right-2 text-yellow-500 hover:text-yellow-400"
                                 >
-                                    <FaTimes size={24} />
+                                    <FaTimes size={20} />
                                 </button>
                                 <div className="flex items-center justify-center mb-4">
                                     <img
                                         src={selectedCard.img}
                                         alt={selectedCard.title}
-                                        className="w-full h-32 sm:h-40 object-cover rounded-t-lg"
+                                        className="w-full h-24 object-cover rounded-t-lg"
                                     />
                                 </div>
-                                <h2 className="text-xl sm:text-2xl font-bold text-white text-center mb-4">
+                                <h2 className="text-lg font-bold text-white text-center mb-4">
                                     {selectedCard.title}
                                 </h2>
-                                <p className="text-[#BEC1DD] text-sm sm:text-base">
+                                <p className="text-[#BEC1DD] text-xs">
                                     {selectedCard.des}
                                 </p>
                             </div>
                         </motion.div>
-                    </motion.div>
+                    </>
                 )}
             </AnimatePresence>
+            <div className="hidden sm:block">
+                <AnimatePresence>
+                    {selectedCard && (
+                        <motion.div
+                            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-x-hidden"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                        >
+                            <motion.div
+                                className="bg-[#13162D] rounded-lg w-[80%] max-w-3xl h-auto mx-auto p-6 relative border border-white/[0.1]"
+                                variants={modalVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                <div
+                                    className="absolute inset-0 rounded-lg border-4 border-transparent"
+                                    style={{
+                                        background: "linear-gradient(90deg, transparent, #E2CBFF, transparent) border-box",
+                                        WebkitMask: "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
+                                        WebkitMaskComposite: "xor",
+                                        maskComposite: "exclude",
+                                        backgroundSize: "200% 100%",
+                                        animation: "borderShine 3s linear infinite",
+                                    }}
+                                />
+                                <div className="relative z-10">
+                                    <button
+                                        onClick={handleCloseModal}
+                                        className="absolute top-2 right-2 text-yellow-500 hover:text-yellow-400"
+                                    >
+                                        <FaTimes size={20} />
+                                    </button>
+                                    <div className="flex items-center justify-center mb-4">
+                                        <img
+                                            src={selectedCard.img}
+                                            alt={selectedCard.title}
+                                            className="w-full h-40 object-cover rounded-t-lg"
+                                        />
+                                    </div>
+                                    <h2 className="text-2xl font-bold text-white text-center mb-4">
+                                        {selectedCard.title}
+                                    </h2>
+                                    <p className="text-[#BEC1DD] text-base">
+                                        {selectedCard.des}
+                                    </p>
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
         </div>
     );
 };
