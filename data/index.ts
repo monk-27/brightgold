@@ -172,7 +172,7 @@ export const association = [
   {
     id: 3,
     name: "",
-    img: "/dgft.png",
+    img: "/trade.png",
     nameImg: "",
   },
 ];
