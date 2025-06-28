@@ -344,10 +344,8 @@ const ProductComponent = () => {
     };
 
     return (
-        <div className="bg-[#13162D] pt-24 sm:pt-36 py-10 relative overflow-x-hidden">
-            <header className="fixed top-0 left-0 w-full bg-[#13162D] z-50 p-4">
-                <h1 className="text-yellow-500 text-center text-2xl font-bold">Bright Gold Refinery</h1>
-            </header>
+        <div className="bg-[#13162D] pt-6 sm:pt-12 py-10 relative overflow-x-hidden">
+
             <div className="mt-20 sm:mt-6">
                 <div className="grid gap-4">
                     <motion.div
@@ -491,14 +489,14 @@ const ProductComponent = () => {
                 {selectedCard && (
                     <>
                         <motion.div
-                            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+                            className="fixed inset-0  bg-opacity-50 z-[15000]"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             onClick={handleCloseModal}
                         />
                         <motion.div
-                            className="fixed top-0 right-0 h-full w-full sm:hidden bg-[#13162D] z-50 p-4 border-l border-white/[0.1]"
+                            className="fixed top-0 right-0 h-full w-full sm:hidden bg-[#13162D] z-[15000] p-4 border-l border-white/[0.1]"
                             variants={drawerVariants}
                             initial="hidden"
                             animate="visible"
@@ -515,10 +513,10 @@ const ProductComponent = () => {
                                     animation: "borderShine 3s linear infinite",
                                 }}
                             />
-                            <div className="relative z-10">
+                            <div className="relative z-[15000]">
                                 <button
                                     onClick={handleCloseModal}
-                                    className="absolute top-2 right-2 text-yellow-500 hover:text-yellow-400"
+                                    className=" z-[15000] absolute top-2 right-2 text-yellow-500 hover:text-yellow-400"
                                 >
                                     <FaTimes size={20} />
                                 </button>
@@ -526,7 +524,7 @@ const ProductComponent = () => {
                                     <img
                                         src={selectedCard.img}
                                         alt={selectedCard.title}
-                                        className="w-full h-24 object-cover rounded-t-lg"
+                                        className="w-full h-44 sm:h-48 object-cover rounded-t-lg"
                                     />
                                 </div>
                                 <h2 className="text-lg font-bold text-white text-center mb-4">

@@ -45,7 +45,7 @@ export const FloatingNav = ({
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          "flex max-w-5xl md:min-w-[80vw] lg:min-w-[60vw]  fixed z-[5000] top-10 inset-x-0 mx-auto px-4 sm:px-16 py-6 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-between",
+          "flex max-w-4xl md:min-w-[80vw] lg:min-w-[60vw]  fixed z-[5000] top-10 inset-x-0 mx-auto px-4 sm:px-16 py-6 rounded-lg border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] items-center justify-between",
           className
         )}
         style={{
@@ -55,7 +55,7 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        <Link href="/" className="flex-shrink-0 mr-4">
+        <Link href="/" className="flex-shrink-0 mr-0 sm:mr-4">
           <Image
             src="/bg-logo.png"
             alt="Bright Gold Logo"
@@ -73,7 +73,7 @@ export const FloatingNav = ({
             priority
           />
         </Link>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-3 sm:space-x-4">
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
