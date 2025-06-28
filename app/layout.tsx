@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bright Gold",
-  description: "",
+  description: "Bright Gold is a leading gold refinery, specializing in the highest quality gold refining and minting services.",
 };
 
 export default function RootLayout({
@@ -21,9 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/bg-logo.png" sizes="any" />
-      </head>
+      {/* <head> */}
+      <link rel="icon" href="/favicon.ico" />
+      {/* </head> */}
       <body className={inter.className}>
         <FloatingNav navItems={navItems} />
 
@@ -36,6 +36,6 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
-    </html>
+    </html >
   );
 }

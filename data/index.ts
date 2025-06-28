@@ -128,9 +128,9 @@ export const testimonials = [
   {
     id: 1,
     mainquote:
-      "We want to be the best, most accurate and reliable gold refiner.",
+      "Our goal is to set the standard for excellence in gold refining.",
     quote:
-      "❝These are testing times of our resilience. But by sustainably adapting and keeping our focus unaltered, progress would be a breeze to attain. Because together, we definitely can! ❞",
+      "❝In challenging times, our commitment to precision and sustainability drives us forward. Together, we will achieve greatness! ❞",
     name: "Vinay Goyal",
     img: "/ashishgupta.png",
     title: "CEO",
