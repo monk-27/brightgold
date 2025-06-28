@@ -238,20 +238,22 @@ const ContactComponent = () => {
                             {/* Contact Methods */}
                             <div className="space-y-6">
                                 {/* Email */}
-                                <div className="group cursor-pointer">
+                                <div className="group cursor-pointer max-w-full sm:max-w-md mx-auto">
                                     <div className="relative">
                                         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
-                                        <div className="relative bg-white/6 backdrop-blur-xl border border-white/15 rounded-2xl p-8 hover:bg-white/10 hover:border-white/25 transition-all duration-300">
-                                            <div className="flex items-center">
-                                                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
-                                                    <Mail className="w-7 h-7 text-white" />
+                                        <div className="relative bg-white/6 backdrop-blur-xl border border-white/15 rounded-2xl p-4 sm:p-8 hover:bg-white/10 hover:border-white/25 transition-all duration-300">
+                                            <div className="flex flex-col sm:flex-row items-center sm:items-start">
+                                                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 group-hover:scale-110 transition-transform duration-300">
+                                                    <Mail className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
                                                 </div>
-                                                <div className="flex-1">
-                                                    <h3 className="text-white font-semibold text-xl mb-2">Email Us</h3>
-                                                    <p className="text-gray-400 text-sm mb-3">Prompt responses within 4 hours</p>
-                                                    <p className="text-blue-400 font-semibold text-lg">connect@brightgold.com</p>
+                                                <div className="flex-1 text-center sm:text-left">
+                                                    <h3 className="text-white font-semibold text-lg sm:text-xl mb-2">Email Us</h3>
+                                                    <div className="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400"></div>
+
+                                                    <p className="text-gray-400 text-xs sm:text-sm mb-3 mt-1 ">Prompt responses within 4 hours</p>
+                                                    <p className="text-blue-400 font-semibold text-base sm:text-lg">connect@brightgold.com</p>
                                                 </div>
-                                                <div className="text-right">
+                                                <div className="text-center sm:text-right mt-4 sm:mt-0">
                                                     <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Response Time</div>
                                                     <div className="text-sm font-semibold text-green-400">{"< 4 Hours"}</div>
                                                 </div>
@@ -261,22 +263,26 @@ const ContactComponent = () => {
                                 </div>
 
                                 {/* Phone */}
-                                <div className="group cursor-pointer">
+                                <div className="group cursor-pointer max-w-full sm:max-w-md mx-auto">
                                     <div className="relative">
                                         <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
-                                        <div className="relative bg-white/6 backdrop-blur-xl border border-white/15 rounded-2xl p-8 hover:bg-white/10 hover:border-white/25 transition-all duration-300">
-                                            <div className="flex items-center">
-                                                <div className="w-16 h-16 bg-gradient-to-br from-emerald-5001 to-teal-500 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
-                                                    <Phone className="w-7 h-7 text-white" />
+                                        <div className="relative bg-white/6 backdrop-blur-xl border border-white/15 rounded-2xl p-4 sm:p-8 hover:bg-white/10 hover:border-white/25 transition-all duration-300">
+                                            <div className="flex flex-col sm:flex-row items-center sm:items-start">
+                                                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 group-hover:scale-110 transition-transform duration-300">
+                                                    <Phone className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
                                                 </div>
-                                                <div className="flex-1">
-                                                    <h3 className="text-white font-semibold text-xl mb-2">Call Us</h3>
-                                                    <p className="text-gray-400 text-sm mb-3">Speak with our refining experts</p>
-                                                    <p className="text-emerald-400 font-semibold text-lg">011 43093345</p>
+                                                <div className="flex-1 text-center sm:text-left">
+                                                    <h3 className="text-white font-semibold text-lg sm:text-xl mb-2">Call Us</h3>
+                                                    <div className="w-16 h-0.5 bg-gradient-to-r from-emerald-400 to-purple-400"></div>
+
+                                                    <p className="text-gray-400 text-xs sm:text-sm mb-3 pt-2">Speak with our refining experts</p>
+                                                    <p className="text-emerald-400 font-semibold text-base sm:text-lg">011 43093345</p>
                                                 </div>
-                                                <div className="text-right">
-                                                    <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Availability</div>
-                                                    <div className="text-sm font-semibold text-emerald-400">Mon-Sat 10AM-6PM</div>
+                                                <div className="text-center sm:text-right mt-4 sm:mt-0">
+                                                    <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">Availability
+
+                                                        <div className="text-sm font-semibold text-emerald-400">Mon-Sat 10AM-6PM</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -294,7 +300,9 @@ const ContactComponent = () => {
                                                 </div>
                                                 <div className="flex-1">
                                                     <h3 className="text-white font-semibold text-xl mb-2">Visit Us</h3>
-                                                    <p className="text-gray-400 text-sm mb-3">Bright Metal Refiners</p>
+                                                    <div className="w-16 h-0.5 bg-gradient-to-r from-gray-400 to-purple-400"></div>
+
+                                                    <p className="text-gray-400 text-sm mb-3 pt-2 ">Bright Metal Refiners</p>
                                                     <p className="text-purple-400 font-semibold text-lg">
                                                         416 World Trade Center,<br />
                                                         <span className="text-base">Babar Road, New Delhi - 110001</span>
@@ -319,8 +327,10 @@ const ContactComponent = () => {
                                             <Clock className="w-7 h-7 text-white" />
                                         </div>
                                         <div>
-                                            <h3 className="text-white font-semibold text-2xl">Operating Hours</h3>
-                                            <p className="text-gray-400 text-sm">Ready to serve you</p>
+                                            <h3 className="text-white font-semibold text-2xl mb-2">Operating Hours</h3>
+                                            <div className="w-16 h-0.5 bg-gradient-to-r from-orange-400 to-purple-400"></div>
+
+                                            <p className="text-gray-400 text-sm pt-2 ">Ready to serve you</p>
                                         </div>
                                     </div>
 
@@ -359,7 +369,7 @@ const ContactComponent = () => {
                                 <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-cyan-400/15 rounded-full blur-xl animate-pulse delay-500"></div>
 
                                 {/* Content Overlay */}
-                                <div className="absolute inset-0 flex flex-col justify-end p-10 lg:p-16">
+                                <div className="absolute inset-0 flex flex-col justify-end p-4 lg:p-16">
                                     <div className="max-w-lg">
                                         <div className="relative group/card">
                                             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-3xl blur-xl"></div>
@@ -368,11 +378,11 @@ const ContactComponent = () => {
                                                 {/* Badge */}
                                                 <div className="inline-flex items-center bg-gradient-to-r from-yellow-400/20 to-orange-400/20 backdrop-blur-sm border border-yellow-400/30 rounded-full px-4 py-2 mb-6">
                                                     <Star className="w-4 h-4 text-yellow-400 mr-2" />
-                                                    <span className="text-yellow-300 text-sm font-semibold">Gold Standard Service</span>
+                                                    <span className="text-yellow-300 text-sm font-semibold">Bright Metal Refiners</span>
                                                 </div>
 
                                                 <h2 className="text-4xl lg:text-5xl font-light text-white mb-6 leading-tight">
-                                                    Transform Your
+                                                    Transforming
                                                     <span className="block bg-gradient-to-r from-blue-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent font-normal">
                                                         Gold into Purity
                                                     </span>
