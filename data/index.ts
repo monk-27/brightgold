@@ -132,7 +132,7 @@ export const testimonials = [
     quote:
       "❝In challenging times, our commitment to precision and sustainability drives us forward. Together, we will achieve greatness! ❞",
     name: "Vinay Goyal",
-    img: "/ashishgupta.png",
+    img: "/VinayJi.png",
     title: "CEO",
   },
 ];
